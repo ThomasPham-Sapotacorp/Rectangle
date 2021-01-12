@@ -61,9 +61,9 @@ namespace Rectangle
             return new Rectangle(left, top, w, h); 
         }
 
-        public void Square()
+        public void Area()
         {
-            Console.WriteLine("Dien tich: "+ Height * Width);
+            Console.WriteLine("Area of rectangle: "+ Height * Width);
         }
 
     }
@@ -78,7 +78,7 @@ namespace Rectangle
             Rectangle Test1 = new Rectangle(0, 0, 4, 3);
             Rectangle Test2 = new Rectangle(-2, 2, 2, 6);
             Rectangle Ghepdoi = Test1 + Test2;
-            Ghepdoi.Square();
+            Ghepdoi.Area();
    
 
 
