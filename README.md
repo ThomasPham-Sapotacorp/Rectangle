@@ -61,10 +61,9 @@ namespace Rectangle
             return new Rectangle(left, top, w, h); 
         }
 
-        public override string ToString()
+        public void Square()
         {
-            int square = Height * Width;
-            return "Dien tich: " + square;
+            Console.WriteLine("Dien tich: "+ Height * Width);
         }
 
     }
@@ -75,10 +74,13 @@ namespace Rectangle
 
         static void Main(string[] args)
         {
+            // Trả về true nếu rectangle A có giao với Rectangle B. Vùng giao nhau là Result.
+
+
             Rectangle Test1 = new Rectangle(0, 0, 4, 3);
             Rectangle Test2 = new Rectangle(-2, 2, 2, 6);
             Rectangle Ghepdoi = Test1 + Test2;
-            Console.WriteLine(Ghepdoi);
+            Ghepdoi.Square();
    
 
 
